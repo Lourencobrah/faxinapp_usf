@@ -1,0 +1,40 @@
+header{
+    background-color: #00A3FF;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;   
+}
+
+nav{
+    display: flex;
+    gap: 80px;
+}
+
+.logo{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.header-logo{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+#hmb {
+    height: 18px;
+}
+
+.nav-items{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.nav-items img{
+    width: 25px;
+    height: 25px;
+}
