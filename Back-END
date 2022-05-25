@@ -5,3 +5,138 @@
 ###
 O Back-END do projeto foi desenvolvido em JAVA, utilizando a interface NetBeans, criei as classes Contratado, Contratante, Agendamento e Pessoa. Onde Pessoa é uma classe abstrata
 que herda Contratado e Contratante, os metodos onde realiza escolha de fáxina realizada e o valor estão todos em Agendamento.
+
+### CONTRATADO
+
+package com.mycompany.faxinaapp;
+public class Contratado extends Pessoa {
+    private String material;
+
+    public Contratado(String nome, String cpf) {
+        super(nome, cpf);
+        System.out.println("Nome do Contratado: " + nome);
+    }
+    public String getMaterial() {
+        return material;
+    }
+    public void setMaterial(String nome, int quantidade, float valor) {
+        System.out.println("----MATERIAL A SER USADO----");
+        System.out.println("Nome do material: " + nome);
+        System.out.println("Quantidade de materiais: " + quantidade);
+        System.out.println("Valor dos materiais: " + valor);
+    } 
+}
+
+### CONTRATANTE
+
+package com.mycompany.faxinaapp;
+public class Contratante extends Pessoa  {
+   private String endereco;
+
+    public Contratante(String nome, String cpf) {
+        super(nome, cpf);
+        System.out.println("Nome do Contratante: " + nome);
+    }
+   
+    private void contrata() {
+           
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String rua, int numero, String bairro, int cep, String cidade) {
+        System.out.println("----ENDEREÇO DO CONTRATANTE----");
+        System.out.println("Rua: " + rua);
+        System.out.println("Numero: " + numero);
+        System.out.println("Bairro: " + bairro);
+        System.out.println("CEP: " + cep);
+        System.out.println("Cidade: " + cidade);
+    }
+}
+
+### PESSOA
+
+package com.mycompany.faxinaapp;
+public abstract class Pessoa {
+    protected String nome;
+    protected String cpf;
+
+    public Pessoa(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+    
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+    
+}
+
+### AGENDAMENTO
+
+package com.mycompany.faxinaapp;
+import java.util.Scanner;
+public class Agendamento {
+    private String tiposervico;
+    private String data;
+    private String horario;
+    private String profissional;
+    
+    
+    public void tipoServico(){
+    float numero1, numero2, numero3; 
+    int operacao;
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Digite um nÃºmero de 1 a 3: ");
+    operacao = entrada.nextInt();
+    
+    switch(operacao)
+    {
+        case 1:
+            System.out.println("Você optou pela faxina simples e o valor dela é 45$");
+            break;
+        case 2:
+            System.out.println("Você optou pela faxina média e o valor dela é 80$");
+            break;
+        case 3:
+            System.out.println("Você optou pela faxina completa e o valor dela é 120$");
+
+    }
+    
+    }     
+}
+
+### MAIN
+
+package com.mycompany.faxinaapp;
+public class Faxinapp {
+    public static void main(String[] args) {
+        Contratado c1 = new Contratado("Vinicius", "398-328-788-37");
+        Contratante cc = new Contratante ("Roberto", "318-122-333-98");
+        Agendamento a1 = new Agendamento();
+          
+        c1.setMaterial("Bucha", 10, 100f);
+        c1.setMaterial("Rodo", 1, 12f);
+        
+        cc.setEndereco("Carlos Quaglia", 184, "Centenario", 13253300, "Itatiba");
+        
+        a1.tipoServico();
+        
+       
+    }
+}
