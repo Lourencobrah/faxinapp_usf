@@ -5,7 +5,13 @@
 ### Sobre o Grupo:
 O nosso projeto é formado por 5 integrantes, são eles: Tiago, Marcelo, Winicius, Vinicius e Guilherme. Todos nós fazemos parte do curso de Análise a Desenvolvimento de Sistemas E estamos desenvolvendo esse projeto a partír da disciplina de "Prática Profissional: Desenvolvimento de Software". A principal função desse repositório é integrar todos os participantes para um melhor desenvolvimento!
 ### Sobre o Projeto:
-O nosso projeto consiste em agilizar a rotina diária dos profissionais domésticos facilitando assim a organização e sua procura por empregos. Assim como o empregador na Busca de serviços domésticos. Até o momento as tecnologias utilizadas no projeto são: Java(NetBeans), Figma, HTML, CSS, Javascript e MySql, porém poderemos estar atribuindo outras tecnologias conforme o andamento do projeto.
+O nosso projeto consiste em agilizar a rotina diária dos profissionais domésticos facilitando assim a organização e sua procura por empregos. Assim como o empregador na Busca de serviços domésticos. Até o momento as tecnologias utilizadas no projeto são: Java(NetBeans), Figma, HTML, CSS, Javascript, JSP e MySql, porém poderemos estar atribuindo outras tecnologias conforme o andamento do projeto.
+### Como criamos:
+Para chegar ao funcionamento, fizemos a conexão do Banco de dados com front-end e back-end utilizando jdbc, tomcat e jsp, chamado de fullstack.
+### Funcionamento:
+O usuário faz o cadastro no site "FaxinAPP", e em seguida pode estar realizando seu agendamento de tarefa doméstica, podendo selecionar a data, horário, profissional desejado e tipo de serviço.
+
+
   
 <div style="display: inline_block"><br>
   <img align="center" alt="Gui-HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
