@@ -1,0 +1,1 @@
+No Front End toda a interface foi feita primeiramente na ferramenta Figma e em seguida todo o código foi feito em HTML e CSS utilizando o VSCode e usando o JSP para fazer a conexão servidor com o banco de dados
