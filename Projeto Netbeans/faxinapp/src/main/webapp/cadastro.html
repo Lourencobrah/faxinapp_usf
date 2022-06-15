@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/cadastro.css">
+    <link rel="stylesheet" href="./css/global.css">
+
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <div class="container-pai">
+        <h1>CADASTRE-SE!</h1>   
+        <div class="container">
+            <div class="subtitulo">
+                <h2>Preencha suas informações</h2>
+            </div>
+            <div class="sub-container">
+                <form action="cadastrado.jsp" method="post" class="formulario">
+                    <div class="flex">
+                        <div>
+                            <label for="nome">Nome completo</label>
+                            <input type="text" id="nome" name="nome" class="input_g" required>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" class="input_g" required>
+                        </div>
+                        <div>
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="senha" class="input_g" required>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <label for="cpf">CPF</label>
+                            <input type="text" name="cpf" id="cpf" class="input_g" required>
+                        </div>
+                        <div>
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="cidade" id="cidade" class="input_g" required>
+                        </div>
+                        <div>
+                            <label for="rua">Rua</label>
+                            <input type="text" name="rua" id="rua" class="input_g" required>
+                        </div>
+                        
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <label for="bairro">Bairro</label>
+                            <input type="text" name="bairro" id="bairro" class="input_g" required>
+                        </div>
+                        <div>
+                            <label for="numero">Número</label>
+                            <input type="text" name="numero" id="numero" class="input_m" required>
+                        </div>
+                        <div>
+                            <label for="cep">CEP</label>
+                            <input type="text" name="cep" id="cep" class="input_m" required>
+                        </div>
+                                                             
+                    </div>
+                    <input type="submit" class="botao" value="CRIAR CONTA">               
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
